@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --cor-primaria: #977656;
+    --cor-secundaria: #F2DAC2;
+    --cor-terciaria: #000000;
+    --cor-hover: #BCA38A;
+
+    --fonte-principal: 'open sans', sans-serif;
+    --fonte-secundaria: 'anton', sans-serif;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-image: url(img/bg-image.png);
+    background-size: cover;
+}
+
+.header {
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+    .header__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .header__top__informations, .header__top__phones {
+            color: var(--cor-secundaria);
+            display: flex;
+            flex-direction: row;            
+        }
+
+        .header__top__informations {
+            padding-left: 100px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+            
+            .header__top__informations__aberto {
+                color: var(--cor-primaria);
+                margin-right: 26px;
+            }
+                
+            .header__top__informations__semana {
+                color: var(--cor-secundaria);
+            }
+
+        .header__top__phones {
+            column-gap: 48px;
+            padding-right: 100px;
+        }
+
+            .header__top__phones__location {
+                display: flex;
+                align-items: center;
+            }
+
+                .header__top__phones__location__img {
+                    align-items: center;
+                    margin-right: 16px;
+                }
+
+            .header__top__phones__call{
+                display: flex;
+                align-items: center;
+            }
+                
+                .header__top__phones__call__img {
+                    align-items: center;
+                    margin-right: 16px;
+                }
+
+.header-menu {
+    font-family: var(--fonte-principal);
+    font-size: 12;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
+    .header-menu__logo {
+        height: 80px;
+    }
+
+    .header-menu__links {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: flex;
+        align-items: center;
+        gap: 112px;
+        font-weight: 500;
+    }
+
+    .header-menu__links a {
+        color: var(--cor-secundaria);
+        text-decoration: none;
+    }
+
+    .header-menu__links a.header-menu__links__home {
+        color: var(--cor-primaria);
+    }
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 100px;
+    width: 542px;
+    height: 338px;
+}
+
+    .titulo {
+        font-family: var(--fonte-secundaria);
+        color: var(--cor-secundaria);
+        font-size: 75px;
+        letter-spacing: 5px;
+    }
+
+
+    .subtitulo {
+        font-family: var(--fonte-secundaria);
+        color: var(--cor-primaria);
+        display: flex;
+        font-size: 35px;
+        padding-top: 24px;
+    }
+
+    .paragrafo {
+        color: var(--cor-secundaria);
+        font-family: var(--fonte-principal);
+        font-size: 16px;
+        padding-top: 24px;
+        opacity: 64%;
+        line-height: 200%;
+        font-weight: 450;
+    }
+
+.offer {
+    display: flex;
+    padding: 0px 100px;
+    gap: 24px;
+}
+
+    .offer__book, .offer__shopping {
+        font-family: var(--fonte-principal);
+        text-decoration: none;
+        border: 2px, solid;
+        border-color: var(--cor-primaria);
+        padding: 24px 20px;
+        font-weight: 700;
+    }
+
+    .offer__book {
+        color: var(--cor-secundaria);
+        background-color: var(--cor-primaria);
+        border: none;
+    }
+
+    .offer__shopping {
+        color: var(--cor-primaria);
+        background-color: transparent;
+    }
+
+    .offer__book:hover {
+        color: var(--cor-primaria);
+        background-color: var(--cor-secundaria);
+        border: none;
+    }
+
+    .offer__shopping:hover {
+        color: var(--cor-primaria);
+        background-color: var(--cor-secundaria);
+        border-color: var(--cor-secundaria);
+    }
+
+.social {
+    display: flex;
+    padding: 80px 100px;
+    gap: 24px;
+}
+
+    .social__instagram, .social__tiktok {
+        background-color: var(--cor-primaria);
+        padding: 8px;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
